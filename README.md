@@ -4,7 +4,7 @@ Projet d'analyse de données: d'abord **SQL (SQLite)** pour explorer, nettoyer e
 
 ## Le contexte
 
-Ce projet part d'une question concrète : **si l'on lançait aujourd'hui un nouveau soin chez Sephora, lequel aurait le plus de chances de plaire aux clientes ?**
+Ce projet part d'une question concrète : **si l'on lançait aujourd'hui un nouveau soin chez Sephora, lequel aurait le plus de chances de plaire aux client(e)s ?**
  
 Pour y répondre, je l'ai découpée en quatre questions :
  
