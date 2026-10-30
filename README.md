@@ -68,19 +68,19 @@ Ces 468 produits sont retirés. Ainsi, seuls 1 952 soins seront gardés tout au 
 
 ### 1. Un soin coûte typiquement 58 $
 
-![Prix médian par type de soin](figures/1_prix_par_type.png)
+![Prix médian par type de soin](figures/1_prix_par_type.png.png)
 
 Les **crèmes** (538 produits) et les traitements, surtout des **sérums** (452), dominent le marché avec un **prix médian de 58 $**. Le contour des yeux, la protection solaire et l'autobronzant sont les types de soin les moins bien notés.
 
 ### 2. Le prix n'explique presque pas la note
 
-![Note pondérée par tranche de prix](figures/2_note_par_prix.png)
+![Note pondérée par tranche de prix](figures/2_note_par_prix.png.png)
 
 La corrélation entre prix et note est de **0,04**, elle est quasiment nulle. Les notes vont de 4,25 (moins de 25 $) à 4,34 (50-100 $) : un produit plus cher n'est pas mieux noté. Les produits à moins de 25 $ sont en revanche les plus mis en favori.
 
 ### 3. Pour un sérum, la tranche 30-60 $ est la plus intéressante
 
-![Sérums par tranche de prix](figures/3_serums.png)
+![Sérums par tranche de prix](figures/3_serums.png.png)
 
 | Tranche | Sérums | Note pondérée | Favoris (médiane) |
 |---|---:|---:|---:|
@@ -93,13 +93,13 @@ Entre 30 et 60 $, les sérums sont presque aussi bien notés qu'entre 60 et 100 
 
 ### 4. Rétinol, céramides et acide salicylique : au-dessus de la moyenne
 
-![Écart de note à la moyenne par actif](figures/4_actifs.png)
+![Écart de note à la moyenne par actif](figures/4_actifs.png.png)
 
 Les soins qui contiennent du **rétinol** (4,42), des **céramides** (4,39) ou de l'**acide salicylique** (4,37) sont mieux notés que la moyenne (4,30) et ces actifs sont présents dans peu de produits (4 à 10 %). Aussi, l’acide hyaluronique est présent dans 45 % des soins et n’est pas associé à une meilleure note (4,28 contre 4,30), ce n’est pas un actif pour se démarquer.
 
 ### 5. Les marques à surveiller
 
-![Marques : prix, note et nombre d'avis](figures/5_marques.png)
+![Marques : prix, note et nombre d'avis](figures/5_marques.png.png)
 
 Parmi les marques qui ont au moins 10 soins notés :
 
