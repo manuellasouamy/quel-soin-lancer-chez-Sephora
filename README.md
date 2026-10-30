@@ -36,7 +36,7 @@ Le fichier de données n'est pas inclus dans ce dépôt. Vous pouvez le retrouve
 | 1. Explorer | [01_exploration.sql](01_exploration.sql) | Taille de la base, grain, colonnes, catégories |
 | 2. Contrôler la qualité | [02_qualite_donnees.sql](02_qualite_donnees.sql) | Valeurs manquantes, valeurs extrêmes, format du texte des ingrédients |
 | 3. Définir le périmètre | [03_perimetre.sql](03_perimetre.sql) | Vue `skincare` : 1 952 soins |
-| 4. Analyser | [04_analyse.sql](04_analyse.sql) | Les requêtes qui produisent les tableaux de [results/](results/) |
+| 4. Analyser | [04_analyse.sql](04_analyse.sql) | Les requêtes qui produisent les tableaux de `11` à `15` dans l'ordre |
 | 5. Visualiser | Power BI | Les graphiques ci-dessous |
 
 ### Décisions de nettoyage
