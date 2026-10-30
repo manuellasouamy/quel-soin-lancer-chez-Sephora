@@ -59,7 +59,7 @@ Le fichier de données n'est pas inclus dans ce dépôt. Vous pouvez le retrouve
 | Compléments alimentaires (Wellness) | 79 | Ce ne sont pas des soins de la peau |
 | Shop by Concern | 1 | Catégorie à un seul produit |
 
-Ces 468 produits sont retirés. Ainsi, seuls 1 952 soins (dont 37 sans notes et 42 sans ingérédients) seront gardés tout au long de cette analyse.
+Ces 468 produits sont retirés. Ainsi, seuls 1 952 soins (dont 37 sans notes et 42 sans ingrédients) seront gardés tout au long de cette analyse.
 
 ### Choix de méthode
 
