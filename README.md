@@ -68,7 +68,7 @@ Ces 468 produits sont retirés. Ainsi, seuls 1 952 soins seront gardés tout au 
 
 ### 1. Un soin coûte typiquement 58 $
 
-![Prix médian par type de soin](images/1_prix_par_type.png)
+![Prix médian par type de soin](1_prix_par_type.png)
 
 Les **crèmes** (538 produits) et les traitements, surtout des **sérums** (452), dominent le marché avec un **prix médian de 58 $**. Le contour des yeux, la protection solaire et l'autobronzant sont les types de soin les moins bien notés.
 
