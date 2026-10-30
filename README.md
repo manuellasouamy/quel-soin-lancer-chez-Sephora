@@ -46,7 +46,7 @@ Le fichier de données n'est pas inclus dans ce dépôt. Vous pouvez le retrouve
 **Traitement des valeurs manquantes** : pour chaque colonne, la question est : manque d'information, ou absence normale ?
 - Note : 69 soins sans note. Ils n'ont reçu aucun avis, ce qui n'équivaut pas à une note de 0. Ils seront uniquement exclus des calculs de note mais restent dans les autres comptages.
 - Ingrédients : 134 soins sans liste d'ingrédients. C'est une vraie information manquante car il est impossible de savoir s'ils contiennent un actif. Ils sont exclus de l'analyse des actifs uniquement.
-- Prix promotionnel : vide pour 2 375 soins. Ce n'est pas une donnée manquante, cela signifie simplement que le produit n'est pas en promotion. Ces produits sont tous gardés. Les supprimer reviendrait à perdre presque toute la base et le fait d'être en promotion ou non ne change rien aux questions posées.
+- Prix promotionnel : vide pour 2 375 soins. Ce n'est pas une donnée manquante, cela signifie simplement que le produit n'est pas en promotion. Ces produits sont tous gardés. Les supprimer reviendrait à perdre presque tous les soins et le fait d'être en promotion ou non ne change rien aux questions posées.
 - Taille  : colonne non utilisée dans l'analyse, ses valeurs manquantes n'ont pas d'effet.
 
 **Affiner l'analyse** : dans les 2 420 produits Skincare, l'examen des sous-catégories et des prix les plus élevés a montré que certains produits ne sont pas des soins individuels.
