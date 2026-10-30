@@ -1,6 +1,6 @@
 # Quel soin lancer chez Sephora ? 
 
-Projet d'analyse de données: d'abord **SQL (SQLite)** pour explorer, nettoyer et analyser puis **Power BI** pour la visualisation.
+Projet d'analyse de données : d'abord **SQL (SQLite)** pour explorer, nettoyer et analyser puis **Power BI** pour la visualisation.
 
 ## Le contexte
 
@@ -18,7 +18,7 @@ Les réponses s'appuient sur les données publiques du site Sephora : prix, note
 ## La recommandation après analyse
 
 - Lancer un sérum entre 30 et 60 $, en exclusivité Sephora, avec comme principaux actifs : le rétinol, les céramides ou l'acide salicylique.
-- Plusieurs marques sont à surveiller: Dermalogica et Shiseido (très bien notées sur un gros volume d'avis), Paula's Choice (bien notée avec un prix médian de 37 $), ainsi que The Ordinary et LANEIGE (les produits les plus mis en favori).
+- Plusieurs marques sont à surveiller : Dermalogica et Shiseido (très bien notées sur un gros volume d'avis), Paula's Choice (bien notée avec un prix médian de 37 $), ainsi que The Ordinary et LANEIGE (les produits les plus mis en favori).
 
 ## Les données
 
@@ -45,11 +45,11 @@ Le fichier de données n'est pas inclus dans ce dépôt. Vous pouvez le retrouve
 
 **Traitement des valeurs manquantes** : pour chaque colonne, la question est : manque d'information, ou absence normale ?
 - Note : 69 soins sans note. Ils n'ont reçu aucun avis, ce qui n'équivaut pas à une note de 0. Ils seront uniquement exclus des calculs de note mais restent dans les autres comptages.
-- Ingrédients : 134 soins sans liste d'ingrédients. C'est une vraie information manquante car il es impossible de savoir s'ils contiennent un actif. Ils sont exclus de l'analyse des actifs uniquement.
+- Ingrédients : 134 soins sans liste d'ingrédients. C'est une vraie information manquante car il est impossible de savoir s'ils contiennent un actif. Ils sont exclus de l'analyse des actifs uniquement.
 - Prix promotionnel : vide pour 2 375 soins. Ce n'est pas une donnée manquante, cela signifie simplement que le produit n'est pas en promotion. Ces produits sont tous gardés. Les supprimer reviendrait à perdre presque toute la base et le fait d'être en promotion ou non ne change rien aux questions posées.
 - Taille  : colonne non utilisée dans l'analyse, ses valeurs manquantes n'ont pas d'effet.
 
-**Affiner l'analyse** : dans les 2 420 produits Skincare, l'examen des sous-catégories et des prix les plus élevés a montré que certains produits ne sont pas des soins individuels /
+**Affiner l'analyse** : dans les 2 420 produits Skincare, l'examen des sous-catégories et des prix les plus élevés a montré que certains produits ne sont pas des soins individuels.
   
 | Sous-catégorie retirée | Produits | Raison |
 |---|---:|---|
@@ -59,12 +59,12 @@ Le fichier de données n'est pas inclus dans ce dépôt. Vous pouvez le retrouve
 | Compléments alimentaires (Wellness) | 79 | Ce ne sont pas des soins de la peau |
 | Shop by Concern | 1 | Catégorie à un seul produit |
 
-Ces 468 produits sont retirés. Ainsi, seuls 1 952 soins seront gardés tout au long de cette analyse.
+Ces 468 produits sont retirés. Ainsi, seuls 1 952 soins (dont 37 sans notes et 42 sans ingérédients) seront gardés tout au long de cette analyse.
 
 ### Choix de méthode
 
 - Prix médian plutôt que prix moyen : quelques produits de luxe tirent la moyenne vers le haut.
-- Note pondérée par le nombre d'avis : une note de 5/5 sur 8 avis ne peser pas autant qu'une note de 4,8 sur 2 800 avis.
+- Note pondérée par le nombre d'avis : une note de 5/5 sur 8 avis ne pese pas autant qu'une note de 4,8 sur 2 800 avis.
 - Note fiable (moyenne bayésienne) pour classer les produits : chaque note est rapprochée de la moyenne générale (4,30).
 
 ## Les résultats
@@ -106,33 +106,27 @@ Les soins qui contiennent du **rétinol** (4,42), des **céramides** (4,39) ou d
 
 Parmi les marques qui ont au moins 10 soins notés :
 
-- **Dermalogica** (40 produits, 16 969 avis, 4.60/5) et **Shiseido** (47 produits, 19 866 avis, 4.50/5) ont une très bonne note et gros volume d'avis.
+- **Dermalogica** (40 produits, 16 969 avis, 4.60) et **Shiseido** (47 produits, 19 866 avis, 4.50) ont une très bonne note et un gros volume d'avis.
 - **Paula's Choice** (prix médian 37 $) et **innisfree** (prix médian 22 $) montrent qu'on peut être bien noté sans être cher.
-- **The Ordinary** et **LANEIGE** ont les produits les plus mis en favori du site avec des notes dans la moyenne (4,2 à 4,35 sur 5).
-Précisons que les produits les plus populaire ne veut pas dire mieux noté.
+- **The Ordinary** et **LANEIGE** ont les produits les plus mis en favori du site avec des notes dans la moyenne (4,2 à 4,35).
+Précisons que être populaire ne veut pas dire être mieux noté.
 
 ### 6. Exclusivités et nouveautés
 
 - Les exclusivités Sephora sont **moins chères** (34 $ contre 50 $ en médiane) et **plus mises en favori** (15 822 contre 9 606).
-- Les nouveautés ont une note moyenne de 4,57 contre 4,23, mais seulement 62 avis en médiane. Les premiers avis sont souvent plus enthousiastes cela ne signifie pas que les nouveautés sont meilleures.
+- Les nouveautés ont une note moyenne de 4,57 contre 4,23, mais seulement 62 avis en médiane. Les premiers avis sont souvent plus enthousiastes. Cela ne signifie pas que les nouveautés sont meilleures.
 
 ## Les limites
 
-- Pas de ventes ni de dates : l'analyse est axé uniquement sur la satisfaction (notes) et l'intérêt (favoris) de la clientèle et pas sur le chiffre d'affaires.
+- Pas de ventes ni de dates : l'analyse est axée uniquement sur la satisfaction (notes) et l'intérêt (favoris) de la clientèle et pas sur le chiffre d'affaires.
 - Pas de dosage d'actifs : on sait si un actif figure dans la liste d'ingrédients, pas en quelle quantité. Aussi, notons qu'un produit qui contient plusieurs actifs compte pour chacun.
 - Corrélation et causalité : un actif associé à de bonnes notes n'est pas forcément la cause de ces notes.
-- Association des actifs : les données ne disent pas si deux actifs sont associable.
+- Association des actifs : les données ne disent pas si deux actifs sont associables.
 - Le classement par note fiable place en premier un accessoire (le coton Facial Cotton de Shiseido). Il est exclu de la recommandation.
 
 ## Reproduire l'analyse
  
-1. Télécharger `product_info.csv` sur Kaggle (lien dans [data/README.md](data/README.md)).
+1. Télécharger `product_info.csv` sur Kaggle (lien dans [data.README.md](data.README.md)).
 2. Dans [DB Browser for SQLite](https://sqlitebrowser.org/), créer la base avec [sql/00_creation_base.sql](sql/00_creation_base.sql) : table typée, import du CSV, cases vides remplacées par `NULL`.
 3. Exécuter les fichiers `sql/01` à `sql/04` dans l'ordre.
-
-## Outils
-
-**SQLite** via DB Browser for SQLite : CTE, fonctions de fenêtre, jointures, vues, etc // 
-**Power BI Desktop**//
-**Python** (pandas) 
 
