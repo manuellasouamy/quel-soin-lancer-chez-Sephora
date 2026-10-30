@@ -30,10 +30,10 @@ Le fichier de données n'est pas inclus dans ce dépôt : voir [data/README.md](
 
 | Étape | Fichier | Ce qui est fait |
 |---|---|---|
-| 1. Explorer | [sql/01_exploration.sql](sql/01_exploration.sql) | Taille de la base, grain, colonnes, catégories |
-| 2. Contrôler la qualité | [sql/02_qualite_donnees.sql](sql/02_qualite_donnees.sql) | Valeurs manquantes, valeurs extrêmes, format du texte des ingrédients |
-| 3. Définir le périmètre | [sql/03_perimetre.sql](sql/03_perimetre.sql) | Vue `skincare` : 1 952 soins |
-| 4. Analyser | [sql/04_analyse.sql](sql/04_analyse.sql) | Les requêtes qui produisent les tableaux de [results/](results/) |
+| 1. Explorer | [01_exploration.sql](01_exploration.sql) | Taille de la base, grain, colonnes, catégories |
+| 2. Contrôler la qualité | [02_qualite_donnees.sql](02_qualite_donnees.sql) | Valeurs manquantes, valeurs extrêmes, format du texte des ingrédients |
+| 3. Définir le périmètre | [03_perimetre.sql](03_perimetre.sql) | Vue `skincare` : 1 952 soins |
+| 4. Analyser | [04_analyse.sql](04_analyse.sql) | Les requêtes qui produisent les tableaux de [results/](results/) |
 | 5. Visualiser | Power BI | Les graphiques ci-dessous |
 
 ### Décisions de nettoyage
