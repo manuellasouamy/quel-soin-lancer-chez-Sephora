@@ -41,7 +41,7 @@ Le fichier de données n'est pas inclus dans ce dépôt. Vous pouvez le retrouve
 
 ### Décisions de nettoyage
 
-**Choix de la catégorie** : la base contient 8 494 produits répartis en 9 grandes catégories. Le soin (Skincare) est la plus grande avec 2 420 produits (28,5 % de la base). C'est la catégorie visée par la question et elle contient assez de produits pour comparer des prix, des notes et des actifs de façon fiable. L'analyse porte donc sur le Skincare.
+**Choix de la catégorie** : la base contient 8 494 produits répartis en 9 grandes catégories. La catégorie Skincare est la plus grande avec 2 420 produits (28.5 % de la base). C'est la catégorie visée par la question et elle contient assez de produits pour comparer des prix, des notes et des actifs de façon fiable. L'analyse porte donc sur le Skincare.
 
 **Traitement des valeurs manquantes** : pour chaque colonne, la question est : manque d'information, ou absence normale ?
 - Note : 69 soins sans note. Ils n'ont reçu aucun avis, ce qui n'équivaut pas à une note de 0. Ils seront uniquement exclus des calculs de note mais restent dans les autres comptages.
@@ -64,8 +64,8 @@ Ces 468 produits sont retirés. Ainsi, seuls 1 952 soins (dont 37 sans notes et 
 ### Choix de méthode
 
 - Prix médian plutôt que prix moyen : quelques produits de luxe tirent la moyenne vers le haut.
-- Note pondérée par le nombre d'avis : une note de 5/5 sur 8 avis ne pese pas autant qu'une note de 4,8 sur 2 800 avis.
-- Note fiable (moyenne bayésienne) pour classer les produits : chaque note est rapprochée de la moyenne générale (4,30).
+- Note pondérée par le nombre d'avis : une note de 5/5 sur 8 avis ne pèse pas autant qu'une note de 4.8 sur 2 800 avis.
+- Note fiable (moyenne bayésienne) pour classer les produits : chaque note est rapprochée de la moyenne générale (4.30).
 
 ## Les résultats
 
@@ -79,7 +79,7 @@ Les **crèmes** (538 produits) et les traitements, surtout des **sérums** (368)
 
 ![Note pondérée par tranche de prix](2_note_par_prix.png)
 
-La corrélation entre prix et note est de **0,04**, elle est quasiment nulle. Les notes vont de 4,25 (moins de 25 $) à 4,34 (50-100 $) : un produit plus cher n'est pas mieux noté. Les produits à moins de 25 $ sont en revanche les plus mis en favori.
+La corrélation entre prix et note est de **0.04**, elle est quasiment nulle. Les notes vont de 4.25 (moins de 25 $) à 4.34 (50-100 $) : un produit plus cher n'est pas mieux noté. Les produits à moins de 25 $ sont en revanche les plus mis en favori.
 
 ### 3. Pour un sérum, la tranche 30-60 $ est la plus intéressante
 
@@ -87,18 +87,18 @@ La corrélation entre prix et note est de **0,04**, elle est quasiment nulle. Le
 
 | Tranche | Sérums | Note pondérée | Favoris (médiane) |
 |---|---:|---:|---:|
-| Moins de 30 $ | 79 | 4,13 | 41 475 |
-| **30-60 $** | **94** | **4,34** | **20 620** |
-| 60-100 $ | 132 | 4,36 | 10 360 |
-| 100 $ et plus | 63 | 4,27 | 3 942 |
+| Moins de 30 $ | 79 | 4.13 | 41 475 |
+| **30-60 $** | **94** | **4.34** | **20 620** |
+| 60-100 $ | 132 | 4.36 | 10 360 |
+| 100 $ et plus | 63 | 4.27 | 3 942 |
 
-Entre 30 et 60 $, les sérums sont presque aussi bien notés qu'entre 60 et 100 $ (4,34 contre 4,36) avec deux fois plus de favoris et moins de concurrents (94 contre 132).
+Entre 30 et 60 $, les sérums sont presque aussi bien notés qu'entre 60 et 100 $ (4.34 contre 4.36) avec deux fois plus de favoris et moins de concurrents (94 contre 132).
 
 ### 4. Rétinol, céramides et acide salicylique : au-dessus de la moyenne
 
 ![Écart de note à la moyenne par actif](4_actifs.png)
 
-Les soins qui contiennent du **rétinol** (4,42), des **céramides** (4,39) ou de l'**acide salicylique** (4,37) sont mieux notés que la moyenne (4,30) et ces actifs sont présents dans peu de produits (4 à 10 %). Aussi, l’acide hyaluronique est présent dans 45 % des soins et n’est pas associé à une meilleure note (4,28 contre 4,30), ce n’est pas un actif pour se démarquer.
+Les soins qui contiennent du **rétinol** (4.42), des **céramides** (4.39) ou de l'**acide salicylique** (4.37) sont mieux notés que la moyenne (4.30) et ces actifs sont présents dans peu de produits (4 à 10 %). Aussi, l’acide hyaluronique est présent dans 45 % des soins et n’est pas associé à une meilleure note (4.28 contre 4.30), ce n’est pas un actif pour se démarquer.
 
 ### 5. Les marques à surveiller
 
@@ -108,18 +108,18 @@ Parmi les marques qui ont au moins 10 soins notés :
 
 - **Dermalogica** (40 produits, 16 969 avis, 4.60) et **Shiseido** (47 produits, 19 866 avis, 4.50) ont une très bonne note et un gros volume d'avis.
 - **Paula's Choice** (prix médian 37 $) et **innisfree** (prix médian 22 $) montrent qu'on peut être bien noté sans être cher.
-- **The Ordinary** et **LANEIGE** ont les produits les plus mis en favori du site avec des notes dans la moyenne (4,2 à 4,35).
-Précisons que être populaire ne veut pas dire être mieux noté.
+- **The Ordinary** et **LANEIGE** ont les produits les plus mis en favori du site avec des notes dans la moyenne (4.2 à 4.35).
+Précisons qu'être populaire ne veut pas dire être mieux noté.
 
 ### 6. Exclusivités et nouveautés
 
 - Les exclusivités Sephora sont **moins chères** (34 $ contre 50 $ en médiane) et **plus mises en favori** (15 822 contre 9 606).
-- Les nouveautés ont une note moyenne de 4,57 contre 4,23, mais seulement 62 avis en médiane. Les premiers avis sont souvent plus enthousiastes. Cela ne signifie pas que les nouveautés sont meilleures.
+- Les nouveautés ont une note moyenne de 4.57 contre 4.23, mais seulement 62 avis en médiane. Les premiers avis sont souvent plus enthousiastes. Cela ne signifie pas que les nouveautés sont meilleures.
 
 ## Les limites
 
 - Pas de ventes ni de dates : l'analyse est axée uniquement sur la satisfaction (notes) et l'intérêt (favoris) de la clientèle et pas sur le chiffre d'affaires.
-- Pas de dosage d'actifs : on sait si un actif figure dans la liste d'ingrédients, pas en quelle quantité. Aussi, notons qu'un produit qui contient plusieurs actifs compte pour chacun.
+- Pas de dosage d'actifs : on sait si un actif figure dans la liste d'ingrédients, pas en quelle quantité. De plus, notons qu'un produit qui contient plusieurs actifs compte pour chacun.
 - Corrélation et causalité : un actif associé à de bonnes notes n'est pas forcément la cause de ces notes.
 - Association des actifs : les données ne disent pas si deux actifs sont associables.
 - Le classement par note fiable place en premier un accessoire (le coton Facial Cotton de Shiseido). Il est exclu de la recommandation.
@@ -127,6 +127,6 @@ Précisons que être populaire ne veut pas dire être mieux noté.
 ## Reproduire l'analyse
  
 1. Télécharger `product_info.csv` sur Kaggle (lien dans [data.README.md](data.README.md)).
-2. Dans [DB Browser for SQLite](https://sqlitebrowser.org/), créer la base avec [sql/00_creation_base.sql](sql/00_creation_base.sql) : table typée, import du CSV, cases vides remplacées par `NULL`.
-3. Exécuter les fichiers `sql/01` à `sql/04` dans l'ordre.
+2. Dans [DB Browser for SQLite](https://sqlitebrowser.org/), créer la base avec [00_creation_base.sql](00_creation_base.sql) : table typée, import du CSV, cases vides remplacées par `NULL`.
+3. Exécuter les fichiers `01` à `04` dans l'ordre.
 
