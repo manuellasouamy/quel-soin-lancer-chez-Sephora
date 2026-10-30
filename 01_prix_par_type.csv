@@ -1,0 +1,9 @@
+type_de_soin,nb_produits,prix_median,note_ponderee
+Moisturizers,538,58.0,4.32
+Treatments,452,58.0,4.3
+Eye Care,184,58.0,4.18
+Masks,165,40.0,4.34
+Sunscreen,108,36.0,4.17
+Cleansers,354,34.0,4.34
+Self Tanners,53,34.0,4.08
+Lip Balms & Treatments,61,24.0,4.33

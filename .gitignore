@@ -1,0 +1,3 @@
+# Données brutes et base locale
+data/*.csv
+*.db
