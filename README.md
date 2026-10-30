@@ -4,27 +4,30 @@ Projet d'analyse de données: d'abord **SQL (SQLite)** pour explorer, nettoyer e
 
 ## Le contexte
 
-Quels soins pour un premier lancement chez Sephora. Quatre questions se posent :
+Ce projet part d'une question concrète : **si l'on lançait aujourd'hui un nouveau soin chez Sephora, lequel aurait le plus de chances de plaire aux clientes ?**
+ 
+Pour y répondre, je l'ai découpée en quatre questions :
+ 
+1. Quel **type de produit** lancer ?
+2. À quel **prix** ?
+3. Avec quels **actifs** ?
+4. Quelles **marques** surveiller ?
 
-1. Quel type de produit lancer ?
-2. À quel prix ?
-3. Avec quels actifs ?
-4. Quelles marques surveiller (les concurrents)?
-
+Les réponses s'appuient sur les données publiques du site Sephora : prix, notes, nombre d'avis, mises en favori et listes d'ingrédients.
 
 ## La recommandation après analyse
 
 > Lancer un sérum entre 30 et 60 $, en exclusivité Sephora, avec comme principaux actifs : le rétinol, les céramides ou l'acide salicylique.
-> Plusieurs marques sont à surveiller: Dermalogica et Shiseido (très bien notées sur un gros volume d'avis), Paula's Choice (bien notée à un prix proche du nôtre), ainsi que The Ordinary et LANEIGE (les produits les plus mis en favori).
+> Plusieurs marques sont à surveiller: Dermalogica et Shiseido (très bien notées sur un gros volume d'avis), Paula's Choice (bien notée avec un prix médian de 37 $), ainsi que The Ordinary et LANEIGE (les produits les plus mis en favori).
 
 ## Les données
 
 - Source : [Sephora Products and Skincare Reviews](https://www.kaggle.com/datasets/nadyinky/sephora-products-and-skincare-reviews) (Kaggle), fichier `product_info.csv`.
 - 8 494 produits, 27 colonnes : marque, prix, note moyenne, nombre d'avis, nombre de mises en favori, liste d'ingrédients, catégories, exclusivité Sephora, nouveauté…
-- **Une ligne = un produit**, pas de doublon.
+- Une ligne = un produit, pas de doublon.
 - Les données ne contiennent pas : les ventes, les dates et la dose des ingrédients.
 
-Le fichier de données n'est pas inclus dans ce dépôt : voir [data/README.md](data/README.md).
+Le fichier de données n'est pas inclus dans ce dépôt. Vous pouvez le retrouver via `data.README.md`
 
 ## La démarche
 
@@ -38,7 +41,7 @@ Le fichier de données n'est pas inclus dans ce dépôt : voir [data/README.md](
 
 ### Décisions de nettoyage
 
-**Choix de la catégorie** : la base contient 8 494 produits répartis en 9 grandes catégories. Le soin (Skincare) est la plus grande avec 2 420 produits (28,5 % de la base). C'est un marché large et il y a assez de produits pour comparer des prix, des notes et des actifs. L'analyse porte donc sur la Skincare.
+**Choix de la catégorie** : la base contient 8 494 produits répartis en 9 grandes catégories. Le soin (Skincare) est la plus grande avec 2 420 produits (28,5 % de la base). C'est la catégorie visée par la question et elle contient assez de produits pour comparer des prix, des notes et des actifs de façon fiable. L'analyse porte donc sur le Skincare.
 
 **Traitement des valeurs manquantes** : pour chaque colonne, la question est : manque d'information, ou absence normale ?
 - Note : 69 soins sans note. Ils n'ont reçu aucun avis, ce qui n'équivaut pas à une note de 0. Ils seront uniquement exclus des calculs de note mais restent dans les autres comptages.
@@ -122,23 +125,10 @@ Précisons que les produits les plus populaire ne veut pas dire mieux noté.
 - Le classement par note fiable place en premier un accessoire (le coton Facial Cotton de Shiseido). Il est exclu de la recommandation.
 
 ## Reproduire l'analyse
-
-1. Télécharger `product_info.csv` (voir [data/README.md](data/README.md)) et le placer dans `data/`.
-2. Créer la base : `python build_db.py` (nécessite pandas). Cela crée `sephora.db` avec une table `produits` typée.
-3. Ouvrir `sephora.db` dans [DB Browser for SQLite](https://sqlitebrowser.org/) et exécuter les fichiers de `sql/` dans l'ordre.
-4. Les résultats exportés sont dans `results/` et ont servi à construire le rapport Power BI.
-
-## Structure du dépôt
-
-```
-sephora-skincare-sql/
-├── README.md               ce rapport
-├── build_db.py             crée la base SQLite à partir du CSV
-├── data/README.md          où télécharger les données
-├── sql/                    les requêtes, dans l'ordre de la démarche
-├── results/                les tableaux de résultats (CSV)
-└── figures/                les graphiques Power BI
-```
+ 
+1. Télécharger `product_info.csv` sur Kaggle (lien dans [data/README.md](data/README.md)).
+2. Dans [DB Browser for SQLite](https://sqlitebrowser.org/), créer la base avec [sql/00_creation_base.sql](sql/00_creation_base.sql) : table typée, import du CSV, cases vides remplacées par `NULL`.
+3. Exécuter les fichiers `sql/01` à `sql/04` dans l'ordre.
 
 ## Outils
 
@@ -146,6 +136,3 @@ sephora-skincare-sql/
 **Power BI Desktop**//
 **Python** (pandas) 
 
-## Autrice
-
-Manuella IKOUTOU SOUAMY · https://manuella-ikoutou-souamy.netlify.app/ 
