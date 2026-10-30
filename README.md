@@ -17,8 +17,8 @@ Les réponses s'appuient sur les données publiques du site Sephora : prix, note
 
 ## La recommandation après analyse
 
-> Lancer un sérum entre 30 et 60 $, en exclusivité Sephora, avec comme principaux actifs : le rétinol, les céramides ou l'acide salicylique.
-> Plusieurs marques sont à surveiller: Dermalogica et Shiseido (très bien notées sur un gros volume d'avis), Paula's Choice (bien notée avec un prix médian de 37 $), ainsi que The Ordinary et LANEIGE (les produits les plus mis en favori).
+- Lancer un sérum entre 30 et 60 $, en exclusivité Sephora, avec comme principaux actifs : le rétinol, les céramides ou l'acide salicylique.
+- Plusieurs marques sont à surveiller: Dermalogica et Shiseido (très bien notées sur un gros volume d'avis), Paula's Choice (bien notée avec un prix médian de 37 $), ainsi que The Ordinary et LANEIGE (les produits les plus mis en favori).
 
 ## Les données
 
