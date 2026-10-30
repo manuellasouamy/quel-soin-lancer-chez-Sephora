@@ -49,7 +49,7 @@ Le fichier de données n'est pas inclus dans ce dépôt. Vous pouvez le retrouve
 - Prix promotionnel : vide pour 2 375 soins. Ce n'est pas une donnée manquante, cela signifie simplement que le produit n'est pas en promotion. Ces produits sont tous gardés. Les supprimer reviendrait à perdre presque toute la base et le fait d'être en promotion ou non ne change rien aux questions posées.
 - Taille  : colonne non utilisée dans l'analyse, ses valeurs manquantes n'ont pas d'effet.
 
-**Affiner l'analyse** : dans les 2 420 produits Skincare, l'examen des sous-catégories et des prix les plus élevés a montré que certains produits ne sont pas des soins individuels :
+**Affiner l'analyse** : dans les 2 420 produits Skincare, l'examen des sous-catégories et des prix les plus élevés a montré que certains produits ne sont pas des soins individuels /
   
 | Sous-catégorie retirée | Produits | Raison |
 |---|---:|---|
